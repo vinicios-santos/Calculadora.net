@@ -13,6 +13,11 @@ namespace Treinamento.Obj.Classes
             return primeiroNumero / segundoNumero;
         }
 
+        public decimal Porcentagem(decimal primeiroNumero, decimal segundoNumero)
+        {
+            return ((primeiroNumero / segundoNumero) * 100);
+        }
+
         public decimal Multiplicar(decimal primeiroNumero, decimal segundoNumero)
         {
             return primeiroNumero * segundoNumero;
@@ -35,6 +40,7 @@ namespace Treinamento.Obj.Classes
                 EnumTipoOperacoes.Soma => Somar(calcular.PrimeiroNumero, calcular.SegundoNumero),
                 EnumTipoOperacoes.Subtracao => Subtrair(calcular.PrimeiroNumero, calcular.SegundoNumero),
                 EnumTipoOperacoes.Multiplicacao => Multiplicar(calcular.PrimeiroNumero, calcular.SegundoNumero),
+                EnumTipoOperacoes.Porcentagem => Porcentagem(calcular.PrimeiroNumero, calcular.SegundoNumero),
                 EnumTipoOperacoes.Divisao => Dividir(calcular.PrimeiroNumero, calcular.SegundoNumero),
                 _ => throw new Exception("Não foi possível realizar a operação")
             };

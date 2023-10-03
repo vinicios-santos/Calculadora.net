@@ -15,6 +15,7 @@ namespace Treinamento.Obj.Classes
             EnumTipoOperacoes.Soma => PrimeiroNumero + SegundoNumero,
             EnumTipoOperacoes.Subtracao => PrimeiroNumero - SegundoNumero,
             EnumTipoOperacoes.Multiplicacao => PrimeiroNumero * SegundoNumero,
+            EnumTipoOperacoes.Porcentagem => (PrimeiroNumero / SegundoNumero) * 100,
             EnumTipoOperacoes.Divisao => Dividir(PrimeiroNumero, SegundoNumero),
             _ => throw new Exception("Não foi possível realizar a operação")
         };

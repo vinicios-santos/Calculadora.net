@@ -6,6 +6,7 @@
         decimal Subtrair(decimal primeiroNumero, decimal segundoNumero);
         decimal Multiplicar(decimal primeiroNumero, decimal segundoNumero);
         decimal Dividir(decimal primeiroNumero, decimal segundoNumero);
+        decimal Porcentagem(decimal primeiroNumero, decimal segundoNumero);
         decimal Resultado(Calcular calcular);
     }
 }

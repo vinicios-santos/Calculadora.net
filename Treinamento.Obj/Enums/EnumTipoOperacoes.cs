@@ -11,6 +11,8 @@ namespace Treinamento.Obj.Enums
         [Description("Multiplicação")]
         Multiplicacao = 3,
         [Description("Divisão")]
-        Divisao = 4
+        Divisao = 4,
+        [Description("Porcentagem")]
+        Porcentagem = 5
     }
 }

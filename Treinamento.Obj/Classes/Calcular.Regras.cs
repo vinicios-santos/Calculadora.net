@@ -30,7 +30,8 @@ namespace Treinamento.Obj.Classes
                 EnumTipoOperacoes.Soma,
                 EnumTipoOperacoes.Subtracao,
                 EnumTipoOperacoes.Multiplicacao,
-                EnumTipoOperacoes.Divisao
+                EnumTipoOperacoes.Divisao,
+                EnumTipoOperacoes.Porcentagem
             };
 
             var tipoOperacao = (EnumTipoOperacoes)operacao;
