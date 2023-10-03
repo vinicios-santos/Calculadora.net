@@ -12,7 +12,7 @@ namespace Treinamento
 
             try 
             {
-                Console.WriteLine("Escolha a operação: \n 1 - Somar \n 2 - Subtrair \n 3 - Dividir \n 4 - Multiplicar");
+                Console.WriteLine("Escolha a operação: \n 1 - Somar \n 2 - Subtrair \n 3 - Dividir \n 4 - Multiplicar \n 5 - Porcentagem");
                 calcular.SetarOperacao(decimal.Parse(Console.ReadLine()));
 
                 Console.WriteLine("Digite o primeiro numero: ");
@@ -29,6 +29,7 @@ namespace Treinamento
                 Console.WriteLine($"Dividir: {calculadora.Dividir(calcular.PrimeiroNumero, calcular.SegundoNumero)}");
                 Console.WriteLine($"Multiplicar: {calculadora.Multiplicar(calcular.PrimeiroNumero, calcular.SegundoNumero)}");
                 Console.WriteLine($"Subtrair: {calculadora.Subtrair(calcular.PrimeiroNumero, calcular.SegundoNumero)}");
+                Console.WriteLine($"Porcentagem: {calculadora.Porcentagem(calcular.PrimeiroNumero, calcular.SegundoNumero)}");
 
                 //Console.WriteLine($"O resultado é: {calcular.Resultado}");
             }
